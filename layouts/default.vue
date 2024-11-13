@@ -1,14 +1,12 @@
+<script setup lang="ts">
+import Sidebar from "~/features/layout/components/Sidebar.vue";
+</script>
+
 <template>
-  <div>
-    <header>
-      <nav>
-        <ul>
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
-    <slot />
-    <footer>This is footer</footer>
-  </div>
+  <main class="h-screen flex bg-[#F5F6FA]">
+    <Sidebar />
+    <div>
+      <slot />
+    </div>
+  </main>
 </template>
