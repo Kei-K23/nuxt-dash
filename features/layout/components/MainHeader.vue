@@ -3,7 +3,9 @@ const search = ref("");
 </script>
 
 <template>
-  <header class="py-2 px-6 bg-white w-full flex items-center justify-between">
+  <header
+    class="sticky top-0 z-10 py-2 px-6 bg-white w-full flex items-center justify-between border-b border-b-gray-200"
+  >
     <div>
       <UInput v-model="search" placeholder="search..." class="w-[280px]" />
     </div>

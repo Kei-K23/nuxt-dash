@@ -4,7 +4,9 @@ import { NAVIGATION_ITEMS } from "~/constants";
 const route = useRoute();
 </script>
 <template>
-  <div class="w-[240px] h-full bg-white py-5 px-4 border-r border-r-gray-200">
+  <div
+    class="z-10 fixed w-[240px] h-full bg-white py-5 px-4 border-r border-r-gray-200"
+  >
     <div class="flex items-center justify-center">
       <NuxtLink href="/" class="text-lg md:text-xl font-extrabold"
         ><span class="text-emerald-500">Vue</span>Dash</NuxtLink
