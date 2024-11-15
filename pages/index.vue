@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { DASHBOARD_CARDS_DATA } from "~/constants";
 import DashboardCard from "~/features/dashboard/components/DashboardCard.vue";
+import OrdersListTable from "~/features/dashboard/components/OrdersListTable.vue";
 import RevenueChart from "~/features/dashboard/components/RevenueChart.vue";
 import SalesDetailChart from "~/features/dashboard/components/SalesDetailChart.vue";
 
@@ -22,6 +23,9 @@ const value = ref("");
     </div>
     <div class="mt-7">
       <RevenueChart />
+    </div>
+    <div class="mt-7">
+      <OrdersListTable />
     </div>
   </div>
 </template>

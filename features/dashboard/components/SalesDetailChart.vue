@@ -105,6 +105,11 @@ const chartClass = computed(() => `${props.width} ${props.height}`);
 <template>
   <div class="p-8 bg-white h-[450px]">
     <h2 class="text-xl md:text-2xl">Sales Details</h2>
-    <Bar :data="chartData" :options="chartOptions" :class="chartClass" />
+    <Bar
+      :data="chartData"
+      :options="chartOptions"
+      :class="chartClass"
+      class="pb-4"
+    />
   </div>
 </template>
