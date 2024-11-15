@@ -13,7 +13,16 @@ defineProps<{ card: DashboardCard }>();
         }}</span>
         <span class="font-bold text-2xl md:text-[28px]">{{ card.price }}</span>
       </div>
-      <UIcon :name="card.icon" class="size-12" :class="card.iconColor" />
+      <UIcon
+        :name="card.icon"
+        class="size-12"
+        :class="{
+          'text-[#8280FF]': card.name === 'Total User',
+          'text-[#FEC53D]': card.name === 'Total Order',
+          'text-[#4AD991]': card.name === 'Total Sales',
+          'text-[#FF9066]': card.name === 'Total Pending',
+        }"
+      />
     </div>
     <div class="flex items-center gap-x-2 mt-5">
       <UIcon
