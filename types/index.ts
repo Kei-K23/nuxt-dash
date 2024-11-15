@@ -13,6 +13,7 @@ export type Product = {
   productName: string;
   productImage: string;
   price: number;
+  rating: number;
   orderDateTime: string;
   productionDate: string;
   totalQuantity: number;
