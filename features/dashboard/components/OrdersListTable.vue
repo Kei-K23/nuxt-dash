@@ -62,7 +62,7 @@ const filteredRows = computed(() => {
 </script>
 
 <template>
-  <div class="p-8 bg-white">
+  <div class="p-8 shadow-lg border">
     <h2 class="text-xl md:text-2xl">Orders Lists</h2>
     <div>
       <div class="flex py-3.5 border-b border-gray-200 dark:border-gray-700">

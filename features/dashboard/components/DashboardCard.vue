@@ -5,7 +5,7 @@ defineProps<{ card: DashboardCard }>();
 </script>
 
 <template>
-  <div class="bg-white p-4 rounded-lg">
+  <div class="shadow-lg border p-4 rounded-lg">
     <div class="flex items-center justify-between gap-x-4">
       <div class="flex flex-col gap-y-2">
         <span class="text-balance text-gray-500 md:text-lg">{{

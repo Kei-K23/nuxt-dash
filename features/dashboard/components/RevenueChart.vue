@@ -95,7 +95,7 @@ const chartClass = computed(() => `${props.width} ${props.height}`);
 </script>
 
 <template>
-  <div class="p-8 bg-white h-[450px]">
+  <div class="p-8 shadow-lg border rounded-md h-[450px]">
     <h2 class="text-xl md:text-2xl">Revenue</h2>
     <Line
       :data="chartData"

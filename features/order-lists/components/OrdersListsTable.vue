@@ -210,7 +210,7 @@ watch([q, selectedStatus], () => {
       <UButton @click="onReset" color="gray">Reset</UButton>
     </div>
   </div>
-  <div class="bg-white">
+  <div class="shadow-lg border rounded-md">
     <div>
       <UTable :rows="filteredRows" :columns="columns">
         <template #productImage-data="{ row }">

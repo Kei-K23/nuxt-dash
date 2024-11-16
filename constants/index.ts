@@ -44,11 +44,6 @@ export const NAVIGATION_ITEMS = [
       link: "/team",
       icon: "i-heroicons-users",
     },
-    {
-      name: "Table",
-      link: "/table",
-      icon: "i-heroicons-square-2-stack",
-    },
   ],
   [
     {

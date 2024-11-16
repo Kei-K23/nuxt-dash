@@ -7,7 +7,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="w-full h-full bg-white rounded-lg hover:shadow-md transition-all">
+  <div
+    class="w-full h-full shadow-lg border rounded-lg hover:shadow-md transition-all"
+  >
     <img
       :src="product.productImage"
       :alt="product.productName"
