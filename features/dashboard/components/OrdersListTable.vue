@@ -68,7 +68,26 @@ const filteredRows = computed(() => {
       <div class="flex py-3.5 border-b border-gray-200 dark:border-gray-700">
         <UInput v-model="q" placeholder="Filter order..." />
       </div>
-      <UTable :rows="filteredRows" :columns="columns" />
+      <UTable :rows="filteredRows" :columns="columns">
+        <template #status-data="{ row }">
+          <span
+            :class="{
+              'text-[#BA29FF] bg-[#BA29FF]/10 px-2 py-1.5 rounded-md':
+                row.status === 'Shipped',
+              'text-[#00B69B] bg-[#00B69B]/10 px-2 py-1.5 rounded-md':
+                row.status === 'Delivered',
+              'text-[#6226EF] bg-[#6226EF]/10 px-2 py-1.5 rounded-md':
+                row.status === 'Processing',
+              'text-[#FFA756] bg-[#FFA756]/10 px-2 py-1.5 rounded-md':
+                row.status === 'Pending',
+              'text-[#EF3826] bg-[#EF3826]/10 px-2 py-1.5 rounded-md':
+                row.status === 'Cancelled',
+            }"
+            >{{ row.status }}</span
+          >
+        </template>
+      </UTable>
+
       <div
         class="flex justify-end px-3 py-3.5 border-t border-gray-200 dark:border-gray-700"
       >
