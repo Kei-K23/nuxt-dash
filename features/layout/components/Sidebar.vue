@@ -21,10 +21,10 @@ const route = useRoute();
           active-class="bg-emerald-500 text-white"
           v-for="nav in navigation"
           :href="nav.link"
-          class="flex items-center gap-x-3 cursor-pointer px-4 py-1.5 hover:bg-emerald-500 rounded-md hover:text-white transition-all"
+          class="flex items-center gap-x-2 cursor-pointer px-4 py-1.5 hover:bg-emerald-500 rounded-md hover:text-white transition-all"
         >
           <UIcon :name="nav.icon" class="w-5 h-5" />
-          <span>{{ nav.name }}</span>
+          <span class="text-sm">{{ nav.name }}</span>
         </NuxtLink>
       </div>
     </div>

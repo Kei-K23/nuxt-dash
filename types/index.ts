@@ -27,3 +27,11 @@ export type Product = {
   availableColors: string[];
   supplier: string;
 };
+
+export type Todo = {
+  id: string;
+  title: string;
+  description: string;
+  dueDate: Date;
+  isCompleted: boolean;
+};
