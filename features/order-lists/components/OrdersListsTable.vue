@@ -4,8 +4,8 @@ import DateRangePicker from "./DateRangePicker.vue";
 
 const columns = [
   {
-    key: "id",
-    label: "ID",
+    key: "orderCode",
+    label: "Order Code",
   },
   {
     key: "orderedCustomerName",
@@ -42,7 +42,7 @@ const columns = [
 ];
 
 const products = PRODUCTS_DATA.map((p, i) => ({
-  id: i + 1,
+  orderCode: `OD-${i + 1}`,
   orderedCustomerName: p.orderedCustomerName,
   productName: p.productName,
   address: p.orderLocation,

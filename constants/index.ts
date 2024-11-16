@@ -13,11 +13,6 @@ export const NAVIGATION_ITEMS = [
       icon: "i-heroicons-squares-plus",
     },
     {
-      name: "Inbox",
-      link: "/inbox",
-      icon: "i-heroicons-inbox",
-    },
-    {
       name: "Order Lists",
       link: "/order-lists",
       icon: "i-heroicons-list-bullet",
@@ -29,16 +24,6 @@ export const NAVIGATION_ITEMS = [
     },
   ],
   [
-    {
-      name: "Pricing",
-      link: "/pricing",
-      icon: "i-heroicons-currency-dollar",
-    },
-    {
-      name: "Calender",
-      link: "/calender",
-      icon: "i-heroicons-calendar",
-    },
     {
       name: "To-Do",
       link: "/todo",
