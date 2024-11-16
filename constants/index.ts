@@ -137,6 +137,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Electronics",
     sku: "WM-2024-001",
     supplier: "Tech Supplies Inc.",
+    productDescription:
+      "A sleek and ergonomic wireless mouse with adjustable DPI and long battery life.",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Bluetooth Speaker",
@@ -152,6 +156,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Electronics",
     sku: "BS-2024-010",
     supplier: "Sound Solutions Co.",
+    productDescription:
+      "Portable Bluetooth speaker with powerful sound and long-lasting battery.",
+    orderedCustomerName: "Jane Smith",
+    availableColors: ["#0000FF", "#FFD700", "#4B0082"],
   },
   {
     productName: "Gaming Keyboard",
@@ -167,6 +175,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Gaming",
     sku: "GK-2024-020",
     supplier: "Elite Tech Mart",
+    productDescription:
+      "RGB mechanical gaming keyboard with programmable keys and durable switches.",
+    orderedCustomerName: "Max Mustermann",
+    availableColors: ["#1E90FF", "#00FF00", "#FF4500"],
   },
   {
     productName: "LED Desk Lamp",
@@ -182,6 +194,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Home & Office",
     sku: "LDL-2024-005",
     supplier: "Bright Lights Ltd.",
+    productDescription:
+      "Energy-efficient LED desk lamp with adjustable brightness levels.",
+    orderedCustomerName: "Marie Dubois",
+    availableColors: ["#FFFFE0", "#808080", "#DCDCDC"],
   },
   {
     productName: "Smartwatch",
@@ -197,6 +213,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Wearables",
     sku: "SW-2024-015",
     supplier: "Future Gadgets Co.",
+    productDescription:
+      "Feature-packed smartwatch with fitness tracking and notification alerts.",
+    orderedCustomerName: "Hiroshi Tanaka",
+    availableColors: ["#000000", "#FF4500", "#4682B4"],
   },
   {
     productName: "Noise-Cancelling Headphones",
@@ -212,6 +232,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Audio",
     sku: "NCH-2024-003",
     supplier: "SoundCore Inc.",
+    productDescription:
+      "Comfortable headphones with active noise cancellation and immersive sound.",
+    orderedCustomerName: "Emma Brown",
+    availableColors: ["#4B0082", "#000000", "#2E8B57"],
   },
   {
     productName: "Ergonomic Chair",
@@ -227,6 +251,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Furniture",
     sku: "EC-2024-007",
     supplier: "Comfort Seating Co.",
+    productDescription:
+      "Ergonomic office chair with lumbar support and adjustable height settings.",
+    orderedCustomerName: "James Wilson",
+    availableColors: ["#696969", "#2F4F4F", "#778899"],
   },
   {
     productName: "Fitness Tracker",
@@ -242,6 +270,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Health",
     sku: "FT-2024-012",
     supplier: "Active Gear Ltd.",
+    productDescription:
+      "Lightweight fitness tracker with heart rate monitor and step counter.",
+    orderedCustomerName: "Arjun Mehta",
+    availableColors: ["#FF4500", "#4682B4", "#32CD32"],
   },
   {
     productName: "4K Monitor",
@@ -257,6 +289,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Electronics",
     sku: "4KM-2024-008",
     supplier: "Vision Displays Co.",
+    productDescription:
+      "Ultra-HD 4K monitor with HDR support and excellent color accuracy.",
+    orderedCustomerName: "Ahmed Ali",
+    availableColors: ["#000000", "#808080", "#FFFFFF"],
   },
   {
     productName: "Wireless Charger",
@@ -272,6 +308,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Accessories",
     sku: "WC-2024-009",
     supplier: "ChargeTech Inc.",
+    productDescription:
+      "Fast and compact wireless charger for all Qi-compatible devices.",
+    orderedCustomerName: "Giovanni Russo",
+    availableColors: ["#FFD700", "#DCDCDC", "#0000FF"],
   },
   {
     productName: "Portable Power Bank",
@@ -287,6 +327,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Accessories",
     sku: "PB-2024-030",
     supplier: "EnergyHub Ltd.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Drone Camera",
@@ -302,6 +346,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Photography",
     sku: "DC-2024-011",
     supplier: "AeroView Inc.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Waterproof Smart Backpack",
@@ -317,6 +365,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Travel",
     sku: "WB-2024-019",
     supplier: "Urban Gear Co.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Electric Scooter",
@@ -332,6 +384,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Transportation",
     sku: "ES-2024-004",
     supplier: "EcoRiders Ltd.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Instant Coffee Maker",
@@ -347,6 +403,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Kitchen",
     sku: "CM-2024-021",
     supplier: "BrewTech Co.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Robot Vacuum Cleaner",
@@ -362,6 +422,11 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Home Appliances",
     sku: "RV-2024-002",
     supplier: "CleanLiving Solutions",
+
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Electric Toothbrush",
@@ -377,6 +442,11 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Health & Personal Care",
     sku: "ET-2024-014",
     supplier: "OralCare Tech",
+
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Wireless Earbuds",
@@ -392,6 +462,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Audio",
     sku: "WE-2024-016",
     supplier: "AudioXpress Ltd.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Smart Door Lock",
@@ -407,6 +481,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Security",
     sku: "SDL-2024-018",
     supplier: "SafeTech Inc.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Outdoor Tent",
@@ -421,7 +499,11 @@ export const PRODUCTS_DATA: Product[] = [
     orderLocation: "Los Angeles, USA",
     category: "Outdoor",
     sku: "OT-2024-022",
-    supplier: "Adventure Gear Co.",
+    supplier: "Adventure Gear Cos",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Electric Kettle",
@@ -437,6 +519,11 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Kitchen",
     sku: "EK-2024-013",
     supplier: "HomeBrew Solutions",
+
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Portable Blender",
@@ -452,6 +539,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Kitchen",
     sku: "PB-2024-017",
     supplier: "BlenderPro Co.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Wireless Router",
@@ -467,6 +558,11 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Networking",
     sku: "WR-2024-029",
     supplier: "NetX Solutions",
+
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Action Camera",
@@ -482,6 +578,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Photography",
     sku: "AC-2024-006",
     supplier: "AdventureCam Ltd.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Electric Grill",
@@ -497,6 +597,11 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Kitchen",
     sku: "EG-2024-024",
     supplier: "GrillMaster Pro",
+
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "VR Headset",
@@ -512,6 +617,10 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Gaming",
     sku: "VRH-2024-026",
     supplier: "ImmersiveTech Co.",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Smart Thermostat",
@@ -527,6 +636,11 @@ export const PRODUCTS_DATA: Product[] = [
     category: "Home Automation",
     sku: "ST-2024-028",
     supplier: "SmartHome Tech",
+
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Cordless Drill",
@@ -541,7 +655,11 @@ export const PRODUCTS_DATA: Product[] = [
     orderLocation: "Athens, Greece",
     category: "Tools",
     sku: "CD-2024-023",
-    supplier: "Power Tools Co.",
+    supplier: "Power Tools Co",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
     productName: "Digital Picture Frame",
@@ -556,6 +674,10 @@ export const PRODUCTS_DATA: Product[] = [
     orderLocation: "Oslo, Norway",
     category: "Home Decor",
     sku: "DPF-2024-027",
-    supplier: "Memories Digital Ltd.",
+    supplier: "Memories Digital Ltc",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
 ];

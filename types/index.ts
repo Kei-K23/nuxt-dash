@@ -22,5 +22,8 @@ export type Product = {
   orderLocation: string;
   category: string;
   sku: string;
+  productDescription: string;
+  orderedCustomerName: string;
+  availableColors: string[];
   supplier: string;
 };

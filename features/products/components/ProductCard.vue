@@ -11,7 +11,7 @@ defineProps<{
     <img
       :src="product.productImage"
       :alt="product.productName"
-      class="h-[180px] w-full"
+      class="h-[200px] w-full"
     />
     <div class="px-4">
       <h2 class="mb-2 font-bold">{{ product.productName }}</h2>
