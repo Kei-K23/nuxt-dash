@@ -18,6 +18,7 @@ let tasks = reactive<
     <div class="flex justify-between items-center gap-x-3">
       <h2 class="text-xl md:text-3xl font-bold">Todo Lists</h2>
       <CreateTodoModal
+        label="Add New Task"
         @create-todo="
           (task) => {
             tasks.push(task);
@@ -26,7 +27,7 @@ let tasks = reactive<
       />
     </div>
     <div class="mt-7 w-full">
-      <ul class="space-y-4">
+      <ul v-if="tasks.length" class="space-y-4">
         <TodoItem
           v-for="(task, index) in tasks"
           :key="`${task.title}-${index}`"
@@ -49,6 +50,19 @@ let tasks = reactive<
           "
         />
       </ul>
+      <div v-if="!tasks.length" class="mt-10">
+        <p class="text-center text-2xl">No task to take action</p>
+        <div class="flex items-center justify-center mt-2">
+          <CreateTodoModal
+            label="Create a new task"
+            @create-todo="
+              (task) => {
+                tasks.push(task);
+              }
+            "
+          />
+        </div>
+      </div>
     </div>
   </section>
 </template>

@@ -4,6 +4,10 @@ import type { FormSubmitEvent } from "#ui/types";
 import { format } from "date-fns";
 import { DatePicker } from "v-calendar";
 
+defineProps<{
+  label: string;
+}>();
+
 const isOpen = ref(false);
 const emit = defineEmits(["create-todo"]);
 
@@ -43,7 +47,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 
 <template>
   <div>
-    <UButton label="Add New Task" @click="isOpen = true" />
+    <UButton :label="label" @click="isOpen = true" />
 
     <UModal v-model="isOpen">
       <div class="p-4">
