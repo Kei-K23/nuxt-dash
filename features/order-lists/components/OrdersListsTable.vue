@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { PRODUCTS_DATA } from "~/constants";
+import DateRangePicker from "./DateRangePicker.vue";
 
 const columns = [
   {
@@ -91,6 +92,10 @@ const selectedStatus = ref<
     value: string;
   }>
 >([]);
+const selectedDateRange = ref<{
+  start: Date | null;
+  end: Date | null;
+}>({ start: null, end: null });
 
 const filteredRows = computed(() => {
   let filteredProducts = products;
@@ -109,6 +114,21 @@ const filteredRows = computed(() => {
         String(value).toLowerCase().includes(q.value.toLowerCase())
       )
     );
+  }
+
+  // Apply date range filter
+  if (selectedDateRange.value.start && selectedDateRange.value.end) {
+    filteredProducts = filteredProducts.filter((product) => {
+      const orderedDate = new Date(product.orderedDate);
+      if (selectedDateRange.value.start && selectedDateRange.value.end) {
+        return (
+          orderedDate >= selectedDateRange.value.start &&
+          orderedDate <= selectedDateRange.value.end
+        );
+      } else {
+        return false;
+      }
+    });
   }
 
   // Apply pagination
@@ -137,6 +157,21 @@ const totalFilteredProducts = computed(() => {
     );
   }
 
+  // Apply date range filter
+  if (selectedDateRange.value.start && selectedDateRange.value.end) {
+    filteredProducts = filteredProducts.filter((product) => {
+      const orderedDate = new Date(product.orderedDate);
+      if (selectedDateRange.value.start && selectedDateRange.value.end) {
+        return (
+          orderedDate >= selectedDateRange.value.start &&
+          orderedDate <= selectedDateRange.value.end
+        );
+      } else {
+        return false;
+      }
+    });
+  }
+
   return filteredProducts.length;
 });
 
@@ -157,6 +192,14 @@ watch([q, selectedStatus], () => {
     <UInput v-model="q" placeholder="Filter order..." />
 
     <div class="flex items-center gap-x-2">
+      <DateRangePicker
+        @update-range="
+          (range) => {
+            selectedDateRange.start = range.start;
+            selectedDateRange.end = range.end;
+          }
+        "
+      />
       <USelectMenu
         v-model="selectedStatus"
         :options="orderStatus"

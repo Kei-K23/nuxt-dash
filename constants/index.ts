@@ -680,4 +680,23 @@ export const PRODUCTS_DATA: Product[] = [
     orderedCustomerName: "John Doe",
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
+  {
+    productName: "Digital Picture Frame Old edition",
+    productImage: "/img/product_img.png",
+    price: 65.5,
+    rating: 4.5,
+    orderDateTime: "2021-11-10T14:00:00Z",
+    productionDate: "2021-07-18",
+    totalQuantity: 200,
+    orderQuantity: 3,
+    status: "Processing",
+    orderLocation: "Oslo, Norway",
+    category: "Home Decor",
+    sku: "DPF-2024-027",
+    supplier: "Memories Digital Ltc",
+    productDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
+    orderedCustomerName: "John Doe",
+    availableColors: ["#000000", "#FFFFFF", "#FF4500"],
+  },
 ];
