@@ -19,7 +19,7 @@ defineProps<{
       <h2 class="mb-2 text-center font-bold">{{ contact.username }}</h2>
       <p class="text-blue-500 text-center">{{ contact.email }}</p>
       <p class="text-blue-500 text-center">{{ contact.phone }}</p>
-      <p class="text-center text-gray-500">
+      <p class="text-center text-gray-500 mt-2">
         {{ contact.address.street }} ({{ contact.address.city }})
       </p>
     </div>

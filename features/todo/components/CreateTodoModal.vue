@@ -50,6 +50,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     <UButton :label="label" @click="isOpen = true" />
 
     <UModal v-model="isOpen">
+      <h3 class="text-center mt-4">Create New Task</h3>
       <div class="p-4">
         <UForm
           :schema="schema"

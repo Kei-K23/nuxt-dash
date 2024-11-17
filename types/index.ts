@@ -37,6 +37,7 @@ export type Todo = {
 };
 
 export type Contact = {
+  id: string;
   username: string;
   profileImage: string;
   email: string;
@@ -49,6 +50,7 @@ export type Contact = {
   };
 };
 export type Member = {
+  id: string;
   username: string;
   profileImage: string;
   email: string;

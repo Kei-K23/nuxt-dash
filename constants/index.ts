@@ -683,6 +683,7 @@ export const PRODUCTS_DATA: Product[] = [
 
 export const CUSTOMER_CONTACT: Contact[] = [
   {
+    id: "customer-1",
     username: "johndoe",
     profileImage: "/img/customer1.png",
     email: "johndoe@example.com",
@@ -695,6 +696,7 @@ export const CUSTOMER_CONTACT: Contact[] = [
     },
   },
   {
+    id: "customer-2",
     username: "janedoe",
     profileImage: "/img/customer2.png",
     email: "janedoe@example.com",
@@ -707,6 +709,7 @@ export const CUSTOMER_CONTACT: Contact[] = [
     },
   },
   {
+    id: "customer-3",
     username: "mikesmith",
     profileImage: "/img/customer1.png",
     email: "mikesmith@example.com",
@@ -719,6 +722,7 @@ export const CUSTOMER_CONTACT: Contact[] = [
     },
   },
   {
+    id: "customer-4",
     username: "sarajones",
     profileImage: "/img/customer2.png",
     email: "sarajones@example.com",
@@ -731,6 +735,7 @@ export const CUSTOMER_CONTACT: Contact[] = [
     },
   },
   {
+    id: "customer-5",
     username: "davidbrown",
     profileImage: "/img/customer1.png",
     email: "davidbrown@example.com",
@@ -743,6 +748,7 @@ export const CUSTOMER_CONTACT: Contact[] = [
     },
   },
   {
+    id: "customer-6",
     username: "emilywhite",
     profileImage: "/img/customer2.png",
     email: "emilywhite@example.com",
@@ -755,6 +761,7 @@ export const CUSTOMER_CONTACT: Contact[] = [
     },
   },
   {
+    id: "customer-7",
     username: "robertjohnson",
     profileImage: "/img/customer1.png",
     email: "robertjohnson@example.com",
@@ -767,6 +774,7 @@ export const CUSTOMER_CONTACT: Contact[] = [
     },
   },
   {
+    id: "customer-8",
     username: "laurawilson",
     profileImage: "/img/customer2.png",
     email: "laurawilson@example.com",
@@ -779,6 +787,7 @@ export const CUSTOMER_CONTACT: Contact[] = [
     },
   },
   {
+    id: "customer-9",
     username: "peterclark",
     profileImage: "/img/customer1.png",
     email: "peterclark@example.com",
@@ -791,6 +800,7 @@ export const CUSTOMER_CONTACT: Contact[] = [
     },
   },
   {
+    id: "customer-10",
     username: "nancyhall",
     profileImage: "/img/customer1.png",
     email: "nancyhall@example.com",
@@ -806,60 +816,70 @@ export const CUSTOMER_CONTACT: Contact[] = [
 
 export const TEAM_MEMBERS: Member[] = [
   {
+    id: "member-1",
     username: "johndoe",
     profileImage: "/img/customer1.png",
     email: "johndoe@example.com",
     position: "CEO",
   },
   {
+    id: "member-2",
     username: "janedoe",
     profileImage: "/img/customer2.png",
     email: "janedoe@example.com",
     position: "CTO",
   },
   {
+    id: "member-3",
     username: "mikesmith",
     profileImage: "/img/customer1.png",
     email: "mikesmith@example.com",
     position: "COO",
   },
   {
+    id: "member-4",
     username: "sarajones",
     profileImage: "/img/customer2.png",
     email: "sarajones@example.com",
     position: "Manager",
   },
   {
+    id: "member-5",
     username: "davidbrown",
     profileImage: "/img/customer1.png",
     email: "davidbrown@example.com",
     position: "Manager",
   },
   {
+    id: "member-6",
     username: "emilywhite",
     profileImage: "/img/customer2.png",
     email: "emilywhite@example.com",
     position: "Manager",
   },
   {
+    id: "member-7",
     username: "robertjohnson",
     profileImage: "/img/customer1.png",
     email: "robertjohnson@example.com",
     position: "Admin",
   },
   {
+    id: "member-8",
     username: "laurawilson",
     profileImage: "/img/customer2.png",
     email: "laurawilson@example.com",
     position: "Admin",
   },
   {
+    id: "member-9",
     username: "peterclark",
     profileImage: "/img/customer1.png",
     email: "peterclark@example.com",
     position: "Admin",
   },
   {
+    id: "member-10",
     username: "nancyhall",
     profileImage: "/img/customer1.png",
     email: "nancyhall@example.com",
