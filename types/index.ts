@@ -35,3 +35,16 @@ export type Todo = {
   dueDate: Date;
   isCompleted: boolean;
 };
+
+export type Contact = {
+  username: string;
+  profileImage: string;
+  email: string;
+  phone: string;
+  address: {
+    street: string;
+    city: string;
+    state: string;
+    zip: string;
+  };
+};

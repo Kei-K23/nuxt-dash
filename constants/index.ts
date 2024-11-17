@@ -1,4 +1,4 @@
-import type { DashboardCard, Product } from "~/types";
+import type { Contact, DashboardCard, Product } from "~/types";
 
 export const NAVIGATION_ITEMS = [
   [
@@ -678,5 +678,128 @@ export const PRODUCTS_DATA: Product[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo sed dolor asperiores reiciendis minus ad voluptatibus qui omnis saepe dolore voluptas eveniet, fugiat modi soluta quasi rerum totam tenetur dignissimos exercitationem, magnam quam culpa? Quo qui hic officiis provident dolores rem, est at maxime tempore commodi ipsam voluptatem sint?",
     orderedCustomerName: "John Doe",
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
+  },
+];
+
+export const CUSTOMER_CONTACT: Contact[] = [
+  {
+    username: "johndoe",
+    profileImage: "/img/customer1.png",
+    email: "johndoe@example.com",
+    phone: "+1-555-1234",
+    address: {
+      street: "123 Maple Street",
+      city: "Springfield",
+      state: "IL",
+      zip: "62704",
+    },
+  },
+  {
+    username: "janedoe",
+    profileImage: "/img/customer2.png",
+    email: "janedoe@example.com",
+    phone: "+1-555-5678",
+    address: {
+      street: "456 Oak Avenue",
+      city: "Greenville",
+      state: "CA",
+      zip: "95947",
+    },
+  },
+  {
+    username: "mikesmith",
+    profileImage: "/img/customer1.png",
+    email: "mikesmith@example.com",
+    phone: "+1-555-8765",
+    address: {
+      street: "789 Pine Lane",
+      city: "Riverdale",
+      state: "NY",
+      zip: "10471",
+    },
+  },
+  {
+    username: "sarajones",
+    profileImage: "/img/customer2.png",
+    email: "sarajones@example.com",
+    phone: "+1-555-3456",
+    address: {
+      street: "321 Birch Court",
+      city: "Fairfield",
+      state: "CT",
+      zip: "06824",
+    },
+  },
+  {
+    username: "davidbrown",
+    profileImage: "/img/customer1.png",
+    email: "davidbrown@example.com",
+    phone: "+1-555-9876",
+    address: {
+      street: "654 Cedar Drive",
+      city: "Madison",
+      state: "WI",
+      zip: "53703",
+    },
+  },
+  {
+    username: "emilywhite",
+    profileImage: "/img/customer2.png",
+    email: "emilywhite@example.com",
+    phone: "+1-555-4321",
+    address: {
+      street: "987 Elm Street",
+      city: "Lincoln",
+      state: "NE",
+      zip: "68508",
+    },
+  },
+  {
+    username: "robertjohnson",
+    profileImage: "/img/customer1.png",
+    email: "robertjohnson@example.com",
+    phone: "+1-555-6543",
+    address: {
+      street: "159 Spruce Avenue",
+      city: "Boulder",
+      state: "CO",
+      zip: "80302",
+    },
+  },
+  {
+    username: "laurawilson",
+    profileImage: "/img/customer2.png",
+    email: "laurawilson@example.com",
+    phone: "+1-555-7890",
+    address: {
+      street: "753 Aspen Boulevard",
+      city: "Orlando",
+      state: "FL",
+      zip: "32801",
+    },
+  },
+  {
+    username: "peterclark",
+    profileImage: "/img/customer1.png",
+    email: "peterclark@example.com",
+    phone: "+1-555-2468",
+    address: {
+      street: "951 Redwood Circle",
+      city: "Portland",
+      state: "OR",
+      zip: "97205",
+    },
+  },
+  {
+    username: "nancyhall",
+    profileImage: "/img/customer1.png",
+    email: "nancyhall@example.com",
+    phone: "+1-555-1357",
+    address: {
+      street: "258 Willow Way",
+      city: "Seattle",
+      state: "WA",
+      zip: "98101",
+    },
   },
 ];
