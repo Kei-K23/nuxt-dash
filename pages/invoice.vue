@@ -1,12 +1,10 @@
 <template>
-  <div class="min-h-screen bg-gray-100 py-8 px-4 sm:px-6 lg:px-8">
+  <section class="mt-5 px-6">
+    <h2 class="text-xl md:text-3xl font-bold">Invoice</h2>
     <div
-      class="max-w-4xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden"
+      class="mt-7 border mx-auto bg-white shadow-xl rounded-lg overflow-hidden"
     >
       <div class="px-4 py-5 sm:p-6">
-        <h1 class="text-3xl font-bold text-gray-900 mb-6">Invoice Maker</h1>
-
-        <!-- Invoice Details Form -->
         <div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6 mb-6">
           <div class="sm:col-span-3">
             <label
@@ -14,11 +12,11 @@
               class="block text-sm font-medium text-gray-700"
               >Invoice Number</label
             >
-            <input
-              type="text"
+            <UInput
               id="invoiceNumber"
               v-model="invoice.number"
-              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              class="mt-1"
+              placeholder="Invoice number"
             />
           </div>
           <div class="sm:col-span-3">
@@ -27,11 +25,12 @@
               class="block text-sm font-medium text-gray-700"
               >Invoice Date</label
             >
-            <input
-              type="date"
+            <UInput
               id="invoiceDate"
               v-model="invoice.date"
-              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              class="mt-1"
+              placeholder="Invoice Date"
+              type="date"
             />
           </div>
           <div class="sm:col-span-3">
@@ -40,11 +39,11 @@
               class="block text-sm font-medium text-gray-700"
               >Client Name</label
             >
-            <input
-              type="text"
+            <UInput
               id="clientName"
               v-model="invoice.clientName"
-              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              class="mt-1"
+              placeholder="Client name"
             />
           </div>
           <div class="sm:col-span-3">
@@ -53,11 +52,12 @@
               class="block text-sm font-medium text-gray-700"
               >Client Email</label
             >
-            <input
-              type="email"
+            <UInput
               id="clientEmail"
               v-model="invoice.clientEmail"
-              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              class="mt-1"
+              type="email"
+              placeholder="Client email"
             />
           </div>
         </div>
@@ -72,38 +72,34 @@
             :key="index"
             class="flex items-center space-x-4 mb-4"
           >
-            <input
-              type="text"
+            <UInput
               v-model="item.description"
               placeholder="Description"
-              class="flex-grow border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              class="flex-grow"
             />
-            <input
+            <UInput
               type="number"
               v-model="item.quantity"
               placeholder="Qty"
-              class="w-20 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              class="w-28"
             />
-            <input
+            <UInput
               type="number"
               v-model="item.price"
               placeholder="Price"
-              class="w-24 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              class="w-28"
             />
-            <button
+
+            <UButton
+              icon="i-heroicons-trash"
               @click="removeItem(index)"
-              class="text-red-600 hover:text-red-800"
+              color="red"
             >
-              <UIcon name="i-heroicons-trash" class="h-5 w-5" />
-            </button>
+            </UButton>
           </div>
-          <button
-            @click="addItem"
-            class="mt-2 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          >
-            <UIcon name="i-heroicons-plus" class="h-5 w-5 mr-2" />
+          <UButton @click="addItem" size="lg" icon="i-heroicons-plus">
             Add Item
-          </button>
+          </UButton>
         </div>
 
         <!-- Totals -->
@@ -138,13 +134,9 @@
 
         <!-- Actions -->
         <div class="flex justify-end space-x-4">
-          <button
-            @click="printInvoice"
-            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          >
-            <PrinterIcon class="h-5 w-5 mr-2" />
+          <UButton @click="printInvoice" size="lg" icon="i-heroicons-printer">
             Print Invoice
-          </button>
+          </UButton>
         </div>
       </div>
     </div>
@@ -190,7 +182,7 @@
         <p><strong>Total:</strong> {{ formatCurrency(total) }}</p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
