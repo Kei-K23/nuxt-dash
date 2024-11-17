@@ -1,23 +1,27 @@
 <script setup lang="ts">
+import { useIsDarkTheme } from "~/features/layout/hooks/useIsDarkTheme";
 import type { Product } from "~/types";
 
 defineProps<{
   product: Product;
 }>();
+
+const isDark = useIsDarkTheme();
 </script>
 
 <template>
   <div
     class="w-full h-full shadow-lg border rounded-lg hover:shadow-md transition-all"
+    :class="isDark && 'border-gray-600 shadow-gray-800'"
   >
     <img
       :src="product.productImage"
       :alt="product.productName"
-      class="h-[200px] w-full"
+      class="h-[200px] w-full rounded-t-lg"
     />
     <div class="px-4">
       <h2 class="mb-2 font-bold">{{ product.productName }}</h2>
-      <span class="text-blue-500">${{ product.price }}</span>
+      <span class="text-blue-400">${{ product.price }}</span>
       <span class="block">Total quantity: {{ product.totalQuantity }}</span>
     </div>
     <div class="px-4 mt-4 mb-5 flex items-center gap-x-2">

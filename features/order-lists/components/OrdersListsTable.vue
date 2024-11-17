@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { PRODUCTS_DATA } from "~/constants";
 import DateRangePicker from "./DateRangePicker.vue";
+import { useIsDarkTheme } from "~/features/layout/hooks/useIsDarkTheme";
 
 const columns = [
   {
@@ -210,7 +211,9 @@ watch([q, selectedStatus], () => {
       <UButton @click="onReset" color="gray">Reset</UButton>
     </div>
   </div>
-  <div class="shadow-lg border rounded-md">
+  <div
+    class="shadow-lg border rounded-md dark:border-gray-600 dark:shadow-gray-800"
+  >
     <div>
       <UTable :rows="filteredRows" :columns="columns">
         <template #productImage-data="{ row }">

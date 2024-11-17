@@ -93,7 +93,9 @@ const totalFilteredProducts = computed(() => {
   >
     <UInput v-model="q" placeholder="Search product..." />
   </div>
-  <div class="shadow-lg border rounded-md">
+  <div
+    class="shadow-lg border rounded-md dark:border-gray-600 dark:shadow-gray-800"
+  >
     <div>
       <UTable :rows="filteredRows" :columns="columns">
         <template #productImage-data="{ row }">

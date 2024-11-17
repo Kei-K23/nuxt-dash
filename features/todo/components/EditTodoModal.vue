@@ -71,6 +71,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
                   v-model="state.dueDate"
                   is-required
                   @close="close"
+                  class="bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
                 />
               </template>
             </UPopover>

@@ -1,16 +1,23 @@
 <script setup lang="ts">
+import { useIsDarkTheme } from "~/features/layout/hooks/useIsDarkTheme";
 import type { DashboardCard } from "~/types";
 
 defineProps<{ card: DashboardCard }>();
+const isDark = useIsDarkTheme();
 </script>
 
 <template>
-  <div class="shadow-lg border p-4 rounded-lg">
+  <div
+    class="shadow-lg border p-4 rounded-lg"
+    :class="isDark && 'border-gray-600 shadow-gray-800'"
+  >
     <div class="flex items-center justify-between gap-x-4">
       <div class="flex flex-col gap-y-2">
-        <span class="text-balance text-gray-500 md:text-lg">{{
-          card.name
-        }}</span>
+        <span
+          class="text-balance md:text-lg"
+          :class="isDark ? 'text-gray-300' : 'text-gray-500'"
+          >{{ card.name }}</span
+        >
         <span class="font-bold text-2xl md:text-[28px]">{{ card.price }}</span>
       </div>
       <UIcon

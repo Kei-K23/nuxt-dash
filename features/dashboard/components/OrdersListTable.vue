@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { PRODUCTS_DATA } from "~/constants";
+import { useIsDarkTheme } from "~/features/layout/hooks/useIsDarkTheme";
 
+const isDark = useIsDarkTheme();
 const columns = [
   {
     key: "id",
@@ -62,7 +64,10 @@ const filteredRows = computed(() => {
 </script>
 
 <template>
-  <div class="p-8 shadow-lg border">
+  <div
+    class="p-8 shadow-lg border"
+    :class="isDark && 'border-gray-600 shadow-gray-800'"
+  >
     <h2 class="text-xl md:text-2xl">Orders Lists</h2>
     <div>
       <div class="flex py-3.5 border-b border-gray-200 dark:border-gray-700">

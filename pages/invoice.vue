@@ -2,14 +2,14 @@
   <section class="mt-5 px-6">
     <h2 class="text-xl md:text-3xl font-bold">Invoice</h2>
     <div
-      class="mt-7 border mx-auto bg-white shadow-xl rounded-lg overflow-hidden"
+      class="mt-7 border mx-auto dark:border-gray-600 dark:shadow-gray-800 shadow-xl rounded-lg overflow-hidden"
     >
       <div class="px-4 py-5 sm:p-6">
         <div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6 mb-6">
           <div class="sm:col-span-3">
             <label
               for="invoiceNumber"
-              class="block text-sm font-medium text-gray-700"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-200 dark:text-gray-200"
               >Invoice Number</label
             >
             <UInput
@@ -22,7 +22,7 @@
           <div class="sm:col-span-3">
             <label
               for="invoiceDate"
-              class="block text-sm font-medium text-gray-700"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-200 dark:text-gray-200"
               >Invoice Date</label
             >
             <UInput
@@ -36,7 +36,7 @@
           <div class="sm:col-span-3">
             <label
               for="clientName"
-              class="block text-sm font-medium text-gray-700"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-200"
               >Client Name</label
             >
             <UInput
@@ -49,7 +49,7 @@
           <div class="sm:col-span-3">
             <label
               for="clientEmail"
-              class="block text-sm font-medium text-gray-700"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-200"
               >Client Email</label
             >
             <UInput
@@ -105,30 +105,37 @@
         <!-- Totals -->
         <div class="mb-6">
           <div
-            class="flex justify-between items-center py-2 border-t border-gray-200"
+            class="flex justify-between items-center py-2 border-t border-gray-200 dark:border-gray-600"
           >
-            <span class="text-sm font-medium text-gray-500">Subtotal:</span>
-            <span class="text-sm font-medium text-gray-900">{{
-              formatCurrency(subtotal)
-            }}</span>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-300"
+              >Subtotal:</span
+            >
+            <span
+              class="text-sm font-medium text-gray-900 dark:text-gray-100"
+              >{{ formatCurrency(subtotal) }}</span
+            >
           </div>
           <div
-            class="flex justify-between items-center py-2 border-t border-gray-200"
+            class="flex justify-between items-center py-2 border-t border-gray-200 dark:border-gray-600"
           >
-            <span class="text-sm font-medium text-gray-500"
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-300"
               >Tax ({{ invoice.taxRate }}%):</span
             >
-            <span class="text-sm font-medium text-gray-900">{{
-              formatCurrency(taxAmount)
-            }}</span>
+            <span
+              class="text-sm font-medium text-gray-900 dark:text-gray-100"
+              >{{ formatCurrency(taxAmount) }}</span
+            >
           </div>
           <div
-            class="flex justify-between items-center py-2 border-t border-b border-gray-200"
+            class="flex justify-between items-center py-2 border-t border-b border-gray-200 dark:border-gray-600"
           >
-            <span class="text-base font-medium text-gray-900">Total:</span>
-            <span class="text-base font-medium text-gray-900">{{
-              formatCurrency(total)
-            }}</span>
+            <span class="text-base font-medium text-gray-900 dark:text-gray-100"
+              >Total:</span
+            >
+            <span
+              class="text-base font-medium text-gray-900 dark:text-gray-100"
+              >{{ formatCurrency(total) }}</span
+            >
           </div>
         </div>
 

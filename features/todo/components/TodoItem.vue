@@ -14,7 +14,7 @@ const onDelete = (task: Todo) => emit("delete-task", task);
 
 <template>
   <li
-    class="shadow-lg hover:border-emerald-500 transition-all border-2 rounded-lg px-6 py-4"
+    class="shadow-lg hover:border-emerald-500 transition-all border-2 rounded-lg px-6 py-4 dark:border-gray-600 dark:shadow-gray-800"
   >
     <div class="gap-x-4 flex items-center justify-between">
       <div class="flex items-center gap-x-3">

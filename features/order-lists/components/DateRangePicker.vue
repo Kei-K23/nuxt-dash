@@ -63,7 +63,12 @@ function selectRange(duration: Duration) {
           />
         </div>
 
-        <DatePicker v-model="selected" is-range @close="close" />
+        <DatePicker
+          v-model="selected"
+          is-range
+          @close="close"
+          class="bg-gray-100 dark:bg-gray-800 dark:text-white"
+        />
       </div>
     </template>
   </UPopover>
