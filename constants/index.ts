@@ -1,4 +1,4 @@
-import type { Contact, DashboardCard, Product } from "~/types";
+import type { Contact, DashboardCard, Member, Product } from "~/types";
 
 export const NAVIGATION_ITEMS = [
   [
@@ -801,5 +801,68 @@ export const CUSTOMER_CONTACT: Contact[] = [
       state: "WA",
       zip: "98101",
     },
+  },
+];
+
+export const TEAM_MEMBERS: Member[] = [
+  {
+    username: "johndoe",
+    profileImage: "/img/customer1.png",
+    email: "johndoe@example.com",
+    position: "CEO",
+  },
+  {
+    username: "janedoe",
+    profileImage: "/img/customer2.png",
+    email: "janedoe@example.com",
+    position: "CTO",
+  },
+  {
+    username: "mikesmith",
+    profileImage: "/img/customer1.png",
+    email: "mikesmith@example.com",
+    position: "COO",
+  },
+  {
+    username: "sarajones",
+    profileImage: "/img/customer2.png",
+    email: "sarajones@example.com",
+    position: "Manager",
+  },
+  {
+    username: "davidbrown",
+    profileImage: "/img/customer1.png",
+    email: "davidbrown@example.com",
+    position: "Manager",
+  },
+  {
+    username: "emilywhite",
+    profileImage: "/img/customer2.png",
+    email: "emilywhite@example.com",
+    position: "Manager",
+  },
+  {
+    username: "robertjohnson",
+    profileImage: "/img/customer1.png",
+    email: "robertjohnson@example.com",
+    position: "Admin",
+  },
+  {
+    username: "laurawilson",
+    profileImage: "/img/customer2.png",
+    email: "laurawilson@example.com",
+    position: "Admin",
+  },
+  {
+    username: "peterclark",
+    profileImage: "/img/customer1.png",
+    email: "peterclark@example.com",
+    position: "Admin",
+  },
+  {
+    username: "nancyhall",
+    profileImage: "/img/customer1.png",
+    email: "nancyhall@example.com",
+    position: "Office workder",
   },
 ];

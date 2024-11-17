@@ -48,3 +48,9 @@ export type Contact = {
     zip: string;
   };
 };
+export type Member = {
+  username: string;
+  profileImage: string;
+  email: string;
+  position: string;
+};
