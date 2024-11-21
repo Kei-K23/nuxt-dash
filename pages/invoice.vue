@@ -1,3 +1,78 @@
+<script setup lang="ts">
+import { ref, computed } from "vue";
+
+interface InvoiceItem {
+  id: number;
+  description: string;
+  quantity: number;
+  price: number;
+}
+
+interface Invoice {
+  number: string;
+  date: string;
+  clientName: string;
+  clientEmail: string;
+  items: InvoiceItem[];
+  taxRate: number;
+}
+
+const invoice = ref<Invoice>({
+  number: "",
+  date: new Date().toISOString().split("T")[0],
+  clientName: "",
+  clientEmail: "",
+  items: [],
+  taxRate: 10,
+});
+
+const invoicePreview = ref<HTMLElement | null>(null);
+
+const addItem = () => {
+  invoice.value.items.push({
+    id: Date.now(),
+    description: "",
+    quantity: 1,
+    price: 0,
+  });
+};
+
+const removeItem = (index: number) => {
+  invoice.value.items.splice(index, 1);
+};
+
+const subtotal = computed(() => {
+  return invoice.value.items.reduce(
+    (sum, item) => sum + item.quantity * item.price,
+    0
+  );
+});
+
+const taxAmount = computed(() => {
+  return subtotal.value * (invoice.value.taxRate / 100);
+});
+
+const total = computed(() => {
+  return subtotal.value + taxAmount.value;
+});
+
+const formatCurrency = (amount: number) => {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(amount);
+};
+
+const printInvoice = () => {
+  const printContents = invoicePreview.value?.innerHTML;
+  const originalContents = document.body.innerHTML;
+
+  document.body.innerHTML = printContents || "";
+  window.print();
+  document.body.innerHTML = originalContents;
+};
+</script>
+
 <template>
   <section class="mt-5 px-6">
     <h2 class="text-xl md:text-3xl font-bold">Invoice</h2>
@@ -9,7 +84,7 @@
           <div class="sm:col-span-3">
             <label
               for="invoiceNumber"
-              class="block text-sm font-medium text-gray-700 dark:text-gray-200 dark:text-gray-200"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-200"
               >Invoice Number</label
             >
             <UInput
@@ -22,7 +97,7 @@
           <div class="sm:col-span-3">
             <label
               for="invoiceDate"
-              class="block text-sm font-medium text-gray-700 dark:text-gray-200 dark:text-gray-200"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-200"
               >Invoice Date</label
             >
             <UInput
@@ -191,78 +266,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import { ref, computed } from "vue";
-
-interface InvoiceItem {
-  id: number;
-  description: string;
-  quantity: number;
-  price: number;
-}
-
-interface Invoice {
-  number: string;
-  date: string;
-  clientName: string;
-  clientEmail: string;
-  items: InvoiceItem[];
-  taxRate: number;
-}
-
-const invoice = ref<Invoice>({
-  number: "",
-  date: new Date().toISOString().split("T")[0],
-  clientName: "",
-  clientEmail: "",
-  items: [],
-  taxRate: 10,
-});
-
-const invoicePreview = ref<HTMLElement | null>(null);
-
-const addItem = () => {
-  invoice.value.items.push({
-    id: Date.now(),
-    description: "",
-    quantity: 1,
-    price: 0,
-  });
-};
-
-const removeItem = (index: number) => {
-  invoice.value.items.splice(index, 1);
-};
-
-const subtotal = computed(() => {
-  return invoice.value.items.reduce(
-    (sum, item) => sum + item.quantity * item.price,
-    0
-  );
-});
-
-const taxAmount = computed(() => {
-  return subtotal.value * (invoice.value.taxRate / 100);
-});
-
-const total = computed(() => {
-  return subtotal.value + taxAmount.value;
-});
-
-const formatCurrency = (amount: number) => {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  }).format(amount);
-};
-
-const printInvoice = () => {
-  const printContents = invoicePreview.value?.innerHTML;
-  const originalContents = document.body.innerHTML;
-
-  document.body.innerHTML = printContents || "";
-  window.print();
-  document.body.innerHTML = originalContents;
-};
-</script>
