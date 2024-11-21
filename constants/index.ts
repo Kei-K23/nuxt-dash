@@ -53,7 +53,7 @@ export const NAVIGATION_ITEMS = [
     },
     {
       name: "Logout",
-      link: "/",
+      link: "",
       icon: "i-heroicons-power",
     },
   ],
