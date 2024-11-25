@@ -14,9 +14,11 @@ const onDelete = (task: Todo) => emit("delete-task", task);
 
 <template>
   <li
-    class="shadow-lg hover:border-emerald-500 transition-all border-2 rounded-lg px-6 py-4 dark:border-gray-600 dark:shadow-gray-800"
+    class="shadow-lg hover:border-emerald-500 transition-all border-2 rounded-lg px-3 md:px-6 py-2 md:py-4 dark:border-gray-600 dark:shadow-gray-800"
   >
-    <div class="gap-x-4 flex items-center justify-between">
+    <div
+      class="gap-x-4 flex items-center justify-between flex-col md:flex-row gap-5"
+    >
       <div class="flex items-center gap-x-3">
         <UCheckbox v-model="task.isCompleted" :ui="{ base: 'size-6' }" />
         <div>
@@ -34,7 +36,7 @@ const onDelete = (task: Todo) => emit("delete-task", task);
           <p class="mt-1">{{ task.description }}</p>
         </div>
       </div>
-      <div class="flex items-center gap-x-3">
+      <div class="flex items-center justify-end gap-x-3 w-full">
         <EditTodoModal
           :task="task"
           @edit-task="

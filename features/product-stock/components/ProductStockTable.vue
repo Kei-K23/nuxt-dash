@@ -97,7 +97,11 @@ const totalFilteredProducts = computed(() => {
     class="shadow-lg border rounded-md dark:border-gray-600 dark:shadow-gray-800"
   >
     <div>
-      <UTable :rows="filteredRows" :columns="columns">
+      <UTable
+        :rows="filteredRows"
+        :columns="columns"
+        class="w-[270px] sm:w-[320px] md:w-[490px] lg:w-full overflow-x-auto"
+      >
         <template #productImage-data="{ row }">
           <img
             :src="row.productImage"
