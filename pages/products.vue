@@ -19,7 +19,9 @@ let products = reactive<Product[]>(PRODUCTS_DATA);
         "
       />
     </div>
-    <div class="mt-7 grid grid-cols-4 gap-x-5 gap-y-6">
+    <div
+      class="mt-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-6"
+    >
       <ProductCard
         v-for="product in products"
         :key="product.id"
