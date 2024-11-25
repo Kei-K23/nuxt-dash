@@ -10,6 +10,7 @@ export type DashboardCard = {
 };
 
 export type Product = {
+  id: string;
   productName: string;
   productImage: string;
   price: number;

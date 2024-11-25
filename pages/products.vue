@@ -22,8 +22,24 @@ let products = reactive<Product[]>(PRODUCTS_DATA);
     <div class="mt-7 grid grid-cols-4 gap-x-5 gap-y-6">
       <ProductCard
         v-for="product in products"
-        :key="product.productName"
+        :key="product.id"
         :product="product"
+        @edit-product="
+          (product) => {
+            const index = products.findIndex((p) => p.id === product.id);
+            if (index !== -1) {
+              products[index] = product;
+            }
+          }
+        "
+        @delete-product="
+          (product) => {
+            const index = products.findIndex((p) => p.id === product.id);
+            if (index !== -1) {
+              products.splice(index, 1);
+            }
+          }
+        "
       />
     </div>
   </section>

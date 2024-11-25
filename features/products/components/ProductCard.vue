@@ -6,7 +6,11 @@ defineProps<{
   product: Product;
 }>();
 
+const emit = defineEmits(["delete-product", "edit-product"]);
+
 const isDark = useIsDarkTheme();
+
+const onDelete = (product: Product) => emit("delete-product", product);
 </script>
 
 <template>
@@ -32,7 +36,9 @@ const isDark = useIsDarkTheme();
         <UIcon name="i-heroicons-heart" class="size-5" />
       </UButton>
       <UButton variant="outline">Edit</UButton>
-      <UButton variant="outline" color="red">Delete</UButton>
+      <UButton variant="outline" color="red" @click="onDelete(product)"
+        >Delete</UButton
+      >
     </div>
   </div>
 </template>

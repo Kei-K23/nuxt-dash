@@ -104,6 +104,7 @@ export const DASHBOARD_CARDS_DATA: DashboardCard[] = [
 
 export const PRODUCTS_DATA: Product[] = [
   {
+    id: "PD-001",
     productName: "Wireless Mouse",
     productImage: "/img/product_img.png",
     price: 25.99,
@@ -123,6 +124,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-002",
     productName: "Bluetooth Speaker",
     productImage: "/img/product_img.png",
     price: 45.5,
@@ -142,6 +144,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#0000FF", "#FFD700", "#4B0082"],
   },
   {
+    id: "PD-003",
     productName: "Gaming Keyboard",
     productImage: "/img/product_img.png",
     price: 65.99,
@@ -161,6 +164,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#1E90FF", "#00FF00", "#FF4500"],
   },
   {
+    id: "PD-004",
     productName: "LED Desk Lamp",
     productImage: "/img/product_img.png",
     price: 29.99,
@@ -180,6 +184,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#FFFFE0", "#808080", "#DCDCDC"],
   },
   {
+    id: "PD-005",
     productName: "Smartwatch",
     productImage: "/img/product_img.png",
     price: 199.99,
@@ -199,6 +204,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FF4500", "#4682B4"],
   },
   {
+    id: "PD-006",
     productName: "Noise-Cancelling Headphones",
     productImage: "/img/product_img.png",
     price: 120.75,
@@ -218,6 +224,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#4B0082", "#000000", "#2E8B57"],
   },
   {
+    id: "PD-007",
     productName: "Ergonomic Chair",
     productImage: "/img/product_img.png",
     price: 149.99,
@@ -237,6 +244,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#696969", "#2F4F4F", "#778899"],
   },
   {
+    id: "PD-008",
     productName: "Fitness Tracker",
     productImage: "/img/product_img.png",
     price: 59.99,
@@ -256,6 +264,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#FF4500", "#4682B4", "#32CD32"],
   },
   {
+    id: "PD-009",
     productName: "4K Monitor",
     productImage: "/img/product_img.png",
     price: 299.99,
@@ -275,6 +284,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#808080", "#FFFFFF"],
   },
   {
+    id: "PD-010",
     productName: "Wireless Charger",
     productImage: "/img/product_img.png",
     price: 18.99,
@@ -294,6 +304,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#FFD700", "#DCDCDC", "#0000FF"],
   },
   {
+    id: "PD-011",
     productName: "Portable Power Bank",
     productImage: "/img/product_img.png",
     price: 35.5,
@@ -313,6 +324,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-012",
     productName: "Drone Camera",
     productImage: "/img/product_img.png",
     price: 499.99,
@@ -332,6 +344,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-013",
     productName: "Waterproof Smart Backpack",
     productImage: "/img/product_img.png",
     price: 75.99,
@@ -351,6 +364,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-001",
     productName: "Electric Scooter",
     productImage: "/img/product_img.png",
     price: 999.99,
@@ -370,6 +384,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-014",
     productName: "Instant Coffee Maker",
     productImage: "/img/product_img.png",
     price: 89.99,
@@ -389,6 +404,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-015",
     productName: "Robot Vacuum Cleaner",
     productImage: "/img/product_img.png",
     price: 349.99,
@@ -409,6 +425,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-016",
     productName: "Electric Toothbrush",
     productImage: "/img/product_img.png",
     price: 49.99,
@@ -429,6 +446,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-017",
     productName: "Wireless Earbuds",
     productImage: "/img/product_img.png",
     price: 89.5,
@@ -448,6 +466,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-018",
     productName: "Smart Door Lock",
     productImage: "/img/product_img.png",
     price: 129.99,
@@ -467,6 +486,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-019",
     productName: "Outdoor Tent",
     productImage: "/img/product_img.png",
     price: 150.0,
@@ -486,6 +506,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-020",
     productName: "Electric Kettle",
     productImage: "/img/product_img.png",
     price: 25.99,
@@ -506,6 +527,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-021",
     productName: "Portable Blender",
     productImage: "/img/product_img.png",
     price: 45.75,
@@ -525,6 +547,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-022",
     productName: "Wireless Router",
     productImage: "/img/product_img.png",
     price: 85.99,
@@ -545,6 +568,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-023",
     productName: "Action Camera",
     productImage: "/img/product_img.png",
     price: 199.99,
@@ -564,6 +588,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-024",
     productName: "Electric Grill",
     productImage: "/img/product_img.png",
     price: 149.99,
@@ -584,6 +609,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-025",
     productName: "VR Headset",
     productImage: "/img/product_img.png",
     price: 299.5,
@@ -603,6 +629,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-026",
     productName: "Smart Thermostat",
     productImage: "/img/product_img.png",
     price: 129.99,
@@ -623,6 +650,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-027",
     productName: "Cordless Drill",
     productImage: "/img/product_img.png",
     price: 89.99,
@@ -642,6 +670,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-028",
     productName: "Digital Picture Frame",
     productImage: "/img/product_img.png",
     price: 65.5,
@@ -661,6 +690,7 @@ export const PRODUCTS_DATA: Product[] = [
     availableColors: ["#000000", "#FFFFFF", "#FF4500"],
   },
   {
+    id: "PD-029",
     productName: "Digital Picture Frame Old edition",
     productImage: "/img/product_img.png",
     price: 65.5,
