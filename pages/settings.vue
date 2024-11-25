@@ -18,7 +18,7 @@ const settingsInputs = ref<SettingInputs>({
   <section class="mt-5 px-6">
     <h2 class="text-xl md:text-3xl font-bold">General Settings</h2>
     <div
-      class="mt-7 border mx-auto dark:border-gray-600 dark:shadow-gray-800 shadow-xl rounded-lg overflow-hidden p-6"
+      class="mt-7 border mx-auto dark:border-gray-600 dark:shadow-gray-800 shadow-xl rounded-lg overflow-hidden py-4 px-2 p-6"
     >
       <div class="flex flex-col gap-y-1 items-center justify-center mx-auto">
         <UAvatar icon="i-heroicons-photo" size="3xl" />
@@ -82,7 +82,11 @@ const settingsInputs = ref<SettingInputs>({
         </div>
       </div>
       <div class="flex items-center justify-center">
-        <UButton size="xl">Save</UButton>
+        <UButton
+          size="xl"
+          class="w-full md:w-auto flex items-center justify-center"
+          >Save</UButton
+        >
       </div>
     </div>
   </section>

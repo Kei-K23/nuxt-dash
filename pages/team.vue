@@ -19,7 +19,9 @@ let members = reactive<Member[]>(TEAM_MEMBERS);
         "
       />
     </div>
-    <div class="mt-7 grid grid-cols-4 gap-x-5 gap-y-6">
+    <div
+      class="mt-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-6"
+    >
       <TeamUserProfileCard
         v-for="member in members"
         :key="member.username"

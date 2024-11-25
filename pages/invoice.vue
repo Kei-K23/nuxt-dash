@@ -79,7 +79,7 @@ const printInvoice = () => {
     <div
       class="mt-7 border mx-auto dark:border-gray-600 dark:shadow-gray-800 shadow-xl rounded-lg overflow-hidden"
     >
-      <div class="px-2 py-4 sm:p-6">
+      <div class="px-6 py-4 sm:p-6">
         <div
           class="w-full grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6 mb-6"
         >
@@ -147,34 +147,39 @@ const printInvoice = () => {
           <div
             v-for="(item, index) in invoice.items"
             :key="index"
-            class="flex items-center space-x-4 mb-4"
+            class="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-4 mb-4"
           >
             <UInput
               v-model="item.description"
               placeholder="Description"
-              class="flex-grow"
+              class="flex-grow w-full sm:w-auto"
             />
-
             <UInput
               type="number"
               v-model="item.quantity"
               placeholder="Qty"
-              class="w-28"
+              class="w-full sm:w-28"
             />
             <UInput
               type="number"
               v-model="item.price"
               placeholder="Price"
-              class="w-28"
+              class="w-full sm:w-28"
             />
             <UButton
               icon="i-heroicons-trash"
               @click="removeItem(index)"
               color="red"
+              class="w-full flex items-center justify-center sm:w-auto"
             >
             </UButton>
           </div>
-          <UButton @click="addItem" size="lg" icon="i-heroicons-plus">
+          <UButton
+            @click="addItem"
+            size="lg"
+            icon="i-heroicons-plus"
+            class="w-full flex items-center justify-center sm:w-auto"
+          >
             Add Item
           </UButton>
         </div>
