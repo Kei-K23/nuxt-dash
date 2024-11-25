@@ -141,3 +141,17 @@ This project is licensed under the [MIT License](./LICENSE).
 - [Nuxt.js](https://v3.nuxtjs.org/)
 - [NuxtUI](https://ui.nuxt.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
+
+## Page Preview
+
+## Desktop View
+
+![desktop](/public/page-screens/Macbook-Air-1559x975.png)
+
+## Tablet View
+
+![tablet](/public/page-screens/iPad-Air-5-820x1180.png)
+
+## Mobile View
+
+![mobile](/public/page-screens/iPhone-14-Pro-Max-395x932.png)
