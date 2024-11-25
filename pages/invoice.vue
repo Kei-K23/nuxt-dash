@@ -79,8 +79,10 @@ const printInvoice = () => {
     <div
       class="mt-7 border mx-auto dark:border-gray-600 dark:shadow-gray-800 shadow-xl rounded-lg overflow-hidden"
     >
-      <div class="px-4 py-5 sm:p-6">
-        <div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6 mb-6">
+      <div class="px-2 py-4 sm:p-6">
+        <div
+          class="w-full grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6 mb-6"
+        >
           <div class="sm:col-span-3">
             <label
               for="invoiceNumber"
@@ -152,6 +154,7 @@ const printInvoice = () => {
               placeholder="Description"
               class="flex-grow"
             />
+
             <UInput
               type="number"
               v-model="item.quantity"
@@ -164,7 +167,6 @@ const printInvoice = () => {
               placeholder="Price"
               class="w-28"
             />
-
             <UButton
               icon="i-heroicons-trash"
               @click="removeItem(index)"
