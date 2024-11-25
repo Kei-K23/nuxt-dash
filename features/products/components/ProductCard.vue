@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useIsDarkTheme } from "~/features/layout/hooks/useIsDarkTheme";
 import type { Product } from "~/types";
+import EditProductModal from "./EditProductModal.vue";
 
 defineProps<{
   product: Product;
@@ -35,7 +36,15 @@ const onDelete = (product: Product) => emit("delete-product", product);
       <UButton variant="soft">
         <UIcon name="i-heroicons-heart" class="size-5" />
       </UButton>
-      <UButton variant="outline">Edit</UButton>
+      <EditProductModal
+        :product="product"
+        @edit-product="
+          (product) => {
+            emit('edit-product', product);
+          }
+        "
+      />
+
       <UButton variant="outline" color="red" @click="onDelete(product)"
         >Delete</UButton
       >

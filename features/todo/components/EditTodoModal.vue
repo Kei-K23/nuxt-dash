@@ -40,7 +40,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     </UButton>
 
     <UModal v-model="isOpen">
-      <h3 class="text-center mt-4">Editd task</h3>
+      <h3 class="text-center mt-4">Edit the task</h3>
       <div class="p-4">
         <UForm
           :schema="schema"

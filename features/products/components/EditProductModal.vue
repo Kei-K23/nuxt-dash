@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { z } from "zod";
 import type { FormSubmitEvent } from "#ui/types";
+import type { Product } from "~/types";
+
+const props = defineProps<{ product: Product }>();
 
 const isOpen = ref(false);
-const emit = defineEmits(["create-product"]);
+const emit = defineEmits(["edit-product"]);
 
 const schema = z.object({
   productName: z.string().min(3, "Must be at least 3 characters"),
@@ -19,47 +22,36 @@ const schema = z.object({
 type Schema = z.output<typeof schema>;
 
 const state = ref({
-  productName: "",
-  price: 0,
-  productionDate: 0,
-  totalQuantity: 0,
-  category: "",
-  sku: "",
-  supplier: "",
-  productDescription: "",
+  productName: props.product.productName,
+  price: props.product.price,
+  productionDate: props.product.productionDate,
+  totalQuantity: props.product.totalQuantity,
+  category: props.product.category,
+  sku: props.product.sku,
+  supplier: props.product.supplier,
+  productDescription: props.product.productDescription,
 });
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
-  emit("create-product", {
+  isOpen.value = false;
+  emit("edit-product", {
     ...event.data,
-    id: `${event.data.productName}-${new Date().getTime()}`,
+    id: props.product.id,
     productImage: "/img/product_img.png",
     orderDateTime: new Date(),
     orderQuantity: 1,
     orderLocation: "New York, USA",
     orderedCustomerName: "John Doe",
   });
-  isOpen.value = false;
-
-  state.value = {
-    productName: "",
-    price: 0,
-    productionDate: 0,
-    totalQuantity: 0,
-    category: "",
-    sku: "",
-    supplier: "",
-    productDescription: "",
-  };
 }
 </script>
 
 <template>
   <div>
-    <UButton label="Add New Product" @click="isOpen = true" />
+    <UButton variant="outline" @click="isOpen = true">Edit</UButton>
 
     <UModal v-model="isOpen">
-      <h3 class="text-center mt-4">Create New Product</h3>
+      <h3 class="text-center mt-4">Edit the Product</h3>
       <div class="p-4">
         <UForm
           :schema="schema"
