@@ -49,7 +49,6 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 <template>
   <div>
     <UButton variant="outline" @click="isOpen = true">Edit</UButton>
-
     <UModal v-model="isOpen">
       <h3 class="text-center mt-4">Edit the Product</h3>
       <div class="p-4">

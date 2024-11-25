@@ -2,6 +2,7 @@
 import { useIsDarkTheme } from "~/features/layout/hooks/useIsDarkTheme";
 import type { Product } from "~/types";
 import EditProductModal from "./EditProductModal.vue";
+import ViewProductDetail from "./ViewProductDetail.vue";
 
 defineProps<{
   product: Product;
@@ -33,9 +34,7 @@ const onDelete = (product: Product) => emit("delete-product", product);
       <h4 class="block">Total quantity: {{ product.totalQuantity }}</h4>
     </div>
     <div class="px-4 mt-4 mb-5 flex items-center gap-x-2">
-      <UButton variant="soft">
-        <UIcon name="i-heroicons-heart" class="size-5" />
-      </UButton>
+      <ViewProductDetail :product="product" />
       <EditProductModal
         :product="product"
         @edit-product="
@@ -44,7 +43,6 @@ const onDelete = (product: Product) => emit("delete-product", product);
           }
         "
       />
-
       <UButton variant="outline" color="red" @click="onDelete(product)"
         >Delete</UButton
       >
