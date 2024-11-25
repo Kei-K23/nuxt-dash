@@ -6,6 +6,8 @@ A modern, responsive, and customizable admin dashboard template built with **Vue
 
 - **Nuxt.js 3**: Seamless server-side rendering (SSR) and static site generation (SSG) with Vue 3 composition API.
 - **Tailwind CSS**: Utility-first CSS framework for fast and responsive UI development.
+- **Todo Lists Management**: Built-in support for CRUD todo list management
+- **Invoice Maker**: Built-in support for CRUD, interactive Invoice maker
 - **Reusable Components**: Modular and reusable UI components for easy customization.
 - **Dark Mode**: Built-in support for light and dark themes.
 - **Responsive Design**: Fully optimized for all screen sizes.
