@@ -73,7 +73,11 @@ const filteredRows = computed(() => {
       <div class="flex py-3.5 border-b border-gray-200 dark:border-gray-700">
         <UInput v-model="q" placeholder="Filter order..." />
       </div>
-      <UTable :rows="filteredRows" :columns="columns">
+      <UTable
+        :rows="filteredRows"
+        :columns="columns"
+        class="w-[270px] sm:w-[320px] md:w-[490px] lg:w-full overflow-x-auto"
+      >
         <template #status-data="{ row }">
           <span
             :class="{

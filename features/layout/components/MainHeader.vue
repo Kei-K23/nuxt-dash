@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useIsDarkTheme } from "../hooks/useIsDarkTheme";
+import MobileNavigation from "./MobileNavigation.vue";
 import ThemeSwitcher from "./ThemeSwitcher.vue";
 
 const search = ref("");
@@ -13,9 +14,10 @@ const isDark = useIsDarkTheme();
       isDark ? 'bg-black border-b-gray-600' : 'bg-white border-b-gray-200'
     "
   >
-    <div>
-      <UInput v-model="search" placeholder="search..." class="w-[280px]" />
+    <div class="block md:hidden">
+      <MobileNavigation />
     </div>
+    <div class="hidden md:block" />
     <div class="flex items-center gap-x-5">
       <div class="relative">
         <UIcon name="i-heroicons-bell" class="size-6" />

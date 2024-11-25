@@ -10,7 +10,7 @@ const value = ref("");
 <template>
   <div class="mt-5 px-6">
     <h2 class="text-xl md:text-3xl font-bold">Dashboard</h2>
-    <div class="mt-7 grid grid-cols-4 gap-x-5">
+    <div class="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
       <DashboardCard
         v-for="card in DASHBOARD_CARDS_DATA"
         :key="card.name"

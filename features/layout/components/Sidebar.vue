@@ -6,7 +6,7 @@ const isDark = useIsDarkTheme();
 </script>
 <template>
   <div
-    class="z-10 fixed w-[200px] h-full py-5 px-2 border-r"
+    class="hidden z-10 md:block fixed w-[200px] h-full py-5 px-2 border-r"
     :class="isDark ? 'border-r-gray-600' : 'border-r-gray-200'"
   >
     <div class="flex items-center justify-center">
