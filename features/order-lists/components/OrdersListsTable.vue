@@ -188,12 +188,17 @@ watch([q, selectedStatus], () => {
 
 <template>
   <div
-    class="flex justify-between items-center w-full py-3.5 border-b border-gray-200 dark:border-gray-700"
+    class="flex flex-col lg:flex-row justify-between items-center w-full py-3.5 border-b border-gray-200 dark:border-gray-700 gap-4"
   >
-    <UInput v-model="q" placeholder="Filter order..." />
+    <UInput
+      v-model="q"
+      placeholder="Filter order..."
+      class="w-full lg:w-[250px]"
+    />
 
-    <div class="flex items-center gap-x-2">
+    <div class="w-full flex lg:items-center flex-col lg:flex-row gap-3">
       <DateRangePicker
+        class="w-full"
         @update-range="
           (range) => {
             selectedDateRange.start = range.start;
@@ -201,21 +206,27 @@ watch([q, selectedStatus], () => {
           }
         "
       />
-      <USelectMenu
-        v-model="selectedStatus"
-        :options="orderStatus"
-        multiple
-        placeholder="Status"
-        class="w-40"
-      />
-      <UButton @click="onReset" color="gray">Reset</UButton>
+      <div class="flex items-center gap-3">
+        <USelectMenu
+          v-model="selectedStatus"
+          :options="orderStatus"
+          multiple
+          placeholder="Status"
+          class="w-40"
+        />
+        <UButton @click="onReset" color="gray">Reset</UButton>
+      </div>
     </div>
   </div>
   <div
     class="shadow-lg border rounded-md dark:border-gray-600 dark:shadow-gray-800"
   >
     <div>
-      <UTable :rows="filteredRows" :columns="columns">
+      <UTable
+        :rows="filteredRows"
+        :columns="columns"
+        class="w-[270px] sm:w-[320px] md:w-[490px] lg:w-full overflow-x-auto"
+      >
         <template #productImage-data="{ row }">
           <img
             :src="row.productImage"
