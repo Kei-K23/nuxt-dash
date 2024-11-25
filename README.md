@@ -1,4 +1,4 @@
-# Vue Nuxt.js 3 Tailwind CSS Admin Dashboard Template
+# VueDash (Vue Nuxt.js 3 Tailwind CSS Admin Dashboard Template)
 
 A modern, responsive, and customizable admin dashboard template built with **Vue.js**, **Nuxt.js 3**, **NuxtUI** and **Tailwind CSS**. This template is perfect for building powerful admin interfaces, dashboards, and web applications with a clean and minimal design.
 
