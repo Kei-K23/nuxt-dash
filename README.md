@@ -61,6 +61,22 @@ admin-dashboard-template/
 └── tailwind.config.js # Tailwind CSS configuration
 ```
 
+## Routes and Pages Documentation
+
+| **Route**        | **Page Name**      | **Description**                                                         |
+| ---------------- | ------------------ | ----------------------------------------------------------------------- |
+| `/`              | Main Page          | The primary landing page of the admin dashboard.                        |
+| `/login`         | Login Page         | Allows users to log in to access the admin dashboard.                   |
+| `/register`      | Register Page      | Enables new users to create an account.                                 |
+| `/contact`       | Contact Page       | Displays a form for users to reach out for support or inquiries.        |
+| `/invoice`       | Invoice Page       | Displays a list of invoices or details for financial records.           |
+| `/todo`          | Todo App Page      | A page for managing and tracking tasks in a todo list format.           |
+| `/products`      | Products Page      | A page for managing product information, including details and pricing. |
+| `/order-lists`   | Order Lists Page   | Lists all customer orders with options to view and manage them.         |
+| `/product-stock` | Product Stock Page | Displays current stock levels and inventory management options.         |
+| `/settings`      | Settings Page      | Allows users to manage system settings and personal preferences.        |
+| `/team`          | Team Page          | Showcases team members, roles, and permissions management options.      |
+
 ## 🎨 Customization
 
 ### Tailwind CSS
