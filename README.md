@@ -49,7 +49,7 @@ A modern, responsive, and customizable admin dashboard template built with **Vue
 
 ---
 
-## 📄 File Structure
+## 🗂️ File Structure
 
 ```
 admin-dashboard-template/
@@ -61,7 +61,7 @@ admin-dashboard-template/
 └── tailwind.config.js # Tailwind CSS configuration
 ```
 
-## Routes and Pages Documentation
+## 📄 Routes and Pages Documentation
 
 | **Route**        | **Page Name**      | **Description**                                                         |
 | ---------------- | ------------------ | ----------------------------------------------------------------------- |
