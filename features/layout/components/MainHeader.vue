@@ -1,18 +1,13 @@
 <script setup lang="ts">
-import { useIsDarkTheme } from "../hooks/useIsDarkTheme";
 import MobileNavigation from "./MobileNavigation.vue";
 import ThemeSwitcher from "./ThemeSwitcher.vue";
 
 const search = ref("");
-const isDark = useIsDarkTheme();
 </script>
 
 <template>
   <header
-    class="sticky top-0 z-10 py-2 px-6 w-full flex items-center justify-between border-b"
-    :class="
-      isDark ? 'bg-black border-b-gray-600' : 'bg-white border-b-gray-200'
-    "
+    class="sticky top-0 z-10 py-2 px-6 w-full flex items-center justify-between border-b dark:bg-black dark:border-b-gray-600 bg-white border-b-gray-200"
   >
     <div class="block md:hidden">
       <MobileNavigation />

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useIsDarkTheme } from "~/features/layout/hooks/useIsDarkTheme";
 import type { Product } from "~/types";
 import EditProductModal from "./EditProductModal.vue";
 import ViewProductDetail from "./ViewProductDetail.vue";
@@ -10,15 +9,12 @@ defineProps<{
 
 const emit = defineEmits(["delete-product", "edit-product"]);
 
-const isDark = useIsDarkTheme();
-
 const onDelete = (product: Product) => emit("delete-product", product);
 </script>
 
 <template>
   <div
-    class="w-full h-full shadow-lg border rounded-lg hover:shadow-md transition-all"
-    :class="isDark && 'border-gray-600 shadow-gray-800'"
+    class="w-full h-full shadow-lg border rounded-lg hover:shadow-md transition-all dark:border-gray-600 dark:shadow-gray-800"
   >
     <img
       :src="product.productImage"

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { PRODUCTS_DATA } from "~/constants";
 import DateRangePicker from "./DateRangePicker.vue";
-import { useIsDarkTheme } from "~/features/layout/hooks/useIsDarkTheme";
 
 const columns = [
   {

@@ -13,9 +13,6 @@ import {
   LineElement,
   PointElement,
 } from "chart.js";
-import { useIsDarkTheme } from "~/features/layout/hooks/useIsDarkTheme";
-
-const isDark = useIsDarkTheme();
 
 // Register the necessary components for the chart
 ChartJS.register(
@@ -99,8 +96,7 @@ const chartClass = computed(() => `${props.width} ${props.height}`);
 
 <template>
   <div
-    class="p-8 shadow-lg border rounded-md h-[350px] md:h-[450px]"
-    :class="isDark && 'border-gray-600 shadow-gray-800'"
+    class="p-8 shadow-lg border rounded-md h-[350px] md:h-[450px] dark:border-gray-600 dark:shadow-gray-800"
   >
     <h2 class="text-xl md:text-2xl">Revenue</h2>
     <Line
